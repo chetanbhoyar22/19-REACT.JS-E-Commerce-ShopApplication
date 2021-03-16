@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+.regi_div
+{
+    margin-top: 20px;
+    font-family: 'default';
+    padding:20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center
+{
+    text-align: center;
+    color:red;
+    margin-top: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.margin
+{
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.heading
+{
+  color:darkmagenta;
+  font-size: 55px;
+}
+.my_Cart
+{
+  margin: 50px;
+}
+
+.productInfoDiv
+{
+  height: 800px;
+}
+
+.productImage
+{
+  width: 50%;
+  height: 400px;
+  margin-top: 50px;
+}
+
+secondDivProduct
+{
+  padding: 50px;
+
+}
+
+.avoffer
+{
+  margin-top: 20px;
+}
+
+.buyNowButton
+{
+  background-color: #FB641B;
+  border-radius: 5px;
   color: white;
+  border: 0px solid black;
+  font-weight:bolder;
+  width: 250px;
+  height: 60px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.addTocartButton
+{
+  background-color: #FF9F00;
+  border-radius: 5px;
+  color: white;
+  border: 0px solid black;
+  font-weight: bolder;
+  width: 250px;
+  height: 60px;
+  padding: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.place_order_btn
+{
+  margin: 40px;
+}
+
+.my_register_div
+{
+  margin-top: 150px;
+  border: 5px solid black;
+  border-radius: 25px;
+  height: 770px;
+  padding: 30px;
+}
+.my_login_div
+{
+  margin-top: 150px;
+  border: 5px solid black;
+  border-radius: 25px;
+  height: 500px;
+  padding: 30px;
+}
+
+
+
+.myproduct_insert_div
+{
+  padding:100px;
+  height: 900px;
 }

@@ -1,7 +1,21 @@
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
+import {BrowserRouter,Switch,Route,Link} from "react-router-dom";
 
 function Navbar_Component()
 {
+    const MyActiveClass = (path) =>
+    {
+
+        if(window.location.pathname === path)
+        {
+            return "bg-danger";
+        }
+        else
+        {
+            return "text-black";
+        }
+    }
+
     return(<div>
         <Navbar bg="dark" variant="dark" expand="lg">
                 <Navbar.Brand href="/">Shopping App</Navbar.Brand>
@@ -9,10 +23,13 @@ function Navbar_Component()
                 <Navbar.Collapse id="basic-navbar-nav">
 
                 <Nav className="ml-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/Register">Register</Nav.Link>
-                            <Nav.Link href="/Login">Login</Nav.Link>
-                            <Nav.Link href="/Contact">Contact Us</Nav.Link>     
+                            <Link className={"nav-link " + MyActiveClass("/")}  to="/">Home </Link>
+                            <Link className={"nav-link " + MyActiveClass("/MyCart")}  to="/MyCart">MyCart </Link>
+                            <Link className={"nav-link " + MyActiveClass("/Register")}  to="/Register">Register </Link>
+                            <Link className={"nav-link " + MyActiveClass("/Login")}  to="/Login">Login </Link>
+                            <Link className={"nav-link " + MyActiveClass("/Contact")}  to="/Contact">Contact us </Link>
+
+
                 </Nav>
                 </Navbar.Collapse>
         </Navbar>
