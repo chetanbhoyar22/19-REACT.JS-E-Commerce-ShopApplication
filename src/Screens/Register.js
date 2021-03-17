@@ -1,9 +1,30 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Navbar_Component from '../Components/Navbar_Component';
 import {BrowserRouter,Switch,Route,Link} from "react-router-dom";
 
 
 function Register() {
+    //***Dynamic Input Values Change
+    //array use state 
+    const [myvalues,setValues] = useState({
+        name:'',
+        email:'',
+        password:'',
+        mobile:'',
+        address:'',
+        error:false,
+        success:false
+    }
+);
+
+    const { name, email, password, mobile, address, error, success } = myvalues;  //Variable pass to array 
+
+    const handleChange = inputtype_name => e => 
+        {
+                setValues( { ...myvalues,[inputtype_name]: e.target.value } );  //...myvalues - UPDATE
+
+        };//Dynamic Input Values Change***
+
     return (
       <div>
            <Navbar_Component />
@@ -65,27 +86,27 @@ function Register() {
 
                         <div className="form-group">
                             <label >Name <span className="text-danger">*</span></label>
-                            <input type="name" required placeholder="Enter Your Name" className="form-control"/>
+                            <input type="name" required onChange={handleChange("name")} placeholder="Enter Your Name" className="form-control"/>
                         </div>
 
                         <div className="form-group">
                             <label >Email <span className="text-danger">*</span></label>
-                            <input type="email" required placeholder="Enter Your Email" className="form-control"/>
+                            <input type="email" required onChange={handleChange("email")} placeholder="Enter Your Email" className="form-control"/>
                         </div>
                         
                         <div className="form-group">
                             <label >Password <span className="text-danger">*</span></label>
-                            <input type="password" required placeholder="Enter Your Password" className="form-control"/>
+                            <input type="password" required onChange={handleChange("password")} placeholder="Enter Your Password" className="form-control"/>
                         </div>
 
                         <div className="form-group">
                             <label >Mobile <span className="text-danger">*</span></label>
-                            <input type="number" required placeholder="Enter Your Mobile" className="form-control"/>
+                            <input type="number" required onChange={handleChange("mobile")} placeholder="Enter Your Mobile" className="form-control"/>
                         </div>
 
                         <div className="form-group">
                             <label >Address <span className="text-danger">*</span></label>
-                            <input type="text" required placeholder="Enter Your Address" className="form-control"/>
+                            <input type="text" required onChange={handleChange("address")} placeholder="Enter Your Address" className="form-control"/>
                         </div>
                         <br/>
 
@@ -107,6 +128,13 @@ function Register() {
                         
                     </div>
                      <div className="col-lg-4 "></div>
+                            <ul>
+                                <li><h4>User Name : {myvalues.name}</h4></li>
+                                <li><h4>User Email : {myvalues.email}</h4></li>
+                                <li><h4>User Password : {myvalues.password}</h4></li>
+                                <li><h4>User Mobile : {myvalues.mobile}</h4></li>
+                                <li><h4>User Address : {myvalues.address}</h4></li>
+                            </ul> 
                 </div>
             </div>
     );
