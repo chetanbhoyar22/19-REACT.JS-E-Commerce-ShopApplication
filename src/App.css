@@ -10,12 +10,11 @@
     text-align: center;
     color:red;
     margin-top: 20px;
-
 }
 
 .margin
 {
-  margin-top: 20px;
+  margin-top: 1px;
 }
 
 .heading
@@ -33,6 +32,11 @@
   height: 800px;
 }
 
+.padding
+{
+  padding-left: 10px;
+}
+
 .productImage
 {
   width: 50%;
@@ -40,10 +44,9 @@
   margin-top: 50px;
 }
 
-secondDivProduct
+.secondDivProduct
 {
-  padding: 50px;
-
+  padding: 20px;
 }
 
 .avoffer
