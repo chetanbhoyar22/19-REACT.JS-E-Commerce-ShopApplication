@@ -12,6 +12,7 @@ function My_Cart_Component(props)
                 <Card.Body>
                     <Card.Title>{props.product_name}</Card.Title>
                     <Card.Text>
+                     ₹
                     {props.product_price}
                     </Card.Text>
                     <Card.Text>

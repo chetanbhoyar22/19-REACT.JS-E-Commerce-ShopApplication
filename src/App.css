@@ -12,6 +12,13 @@
     margin-top: 20px;
 }
 
+.center1
+{
+    text-align: center;
+    color:black;
+}
+
+
 .margin
 {
   margin-top: 1px;
@@ -86,7 +93,7 @@
 
 .my_register_div
 {
-  margin-top: 150px;
+  margin-top: 60px;
   border: 5px solid black;
   border-radius: 25px;
   height: 770px;
@@ -94,17 +101,31 @@
 }
 .my_login_div
 {
-  margin-top: 150px;
+  margin-top: 60px;
   border: 5px solid black;
   border-radius: 25px;
   height: 500px;
   padding: 30px;
 }
 
-
+.mycategory_insert_div
+{
+  padding:100px;
+  height: 900px;
+}
 
 .myproduct_insert_div
 {
   padding:100px;
-  height: 900px;
+  height: 1200px;
+}
+
+.margin-right
+{
+margin-right: 20px;
+}
+
+.datamsg
+{
+  margin-top:10px;
 }

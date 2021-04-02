@@ -8,7 +8,7 @@ export default function Mycart() {
     return (
         <div>
             <Navbar_component />
-            <h1 className="text-center avoffer">My Cart{window.location.pathname}</h1><br/>
+            <h1 className="text-center avoffer">My Cart{/* {window.location.pathname}*/}</h1><br/> 
 
             <Table striped bordered hover>
             
