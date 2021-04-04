@@ -54,8 +54,8 @@ function Home()
               {products.map((products, index) => {
               return (                                       //Display product using loop
               <div className="col-lg-3">
-              <My_Cart_Component product_image="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" product_name={products.name} product_price={products.price} product_description={products.description}/>
-                </div>
+              <My_Cart_Component product_image={"https://chetanshopappbackend.herokuapp.com/"+products.photo} product_name={products.name} product_price={products.price} product_description={products.description}/>
+                </div> 
                 );
                 })}
 
